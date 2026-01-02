@@ -125,7 +125,5 @@ jobs:
             YouTube: ${{ steps.versions.outputs.YOUTUBE_VERSION }}
             YouTube Music: ${{ steps.versions.outputs.MUSIC_VERSION }}
             Patches: ${{ needs.check.outputs.NEW_VERSION }}
-            
-            Built: $(date -u +'%Y-%m-%d %H:%M:%S UTC')
           files: |
             build/*.apk
